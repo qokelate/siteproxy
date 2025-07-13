@@ -48,7 +48,9 @@ async function handleRequest(request) {
         return getHomePage(request)
     }
 
-    const targetURL = new URL(url.pathname.substring(1+config.separator.length));
+    const tmp0 = url.toString();
+    const tmp1 = tmp0.indexOf(config.separator);
+    const targetURL = new URL(tmp0.substring(tmp1+config.separator.length));
    
 
     // Prepare request headers to emulate a real browser
