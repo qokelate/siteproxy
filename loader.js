@@ -1,13 +1,21 @@
 
 
-if (!window.siteproxy_injected_flag) {
+if (!window.siteproxy_injected_flag) { 
     // only load once
     window.siteproxy_injected_flag = true;
     var proxy_url_prefix = '" + _0x2586f7 + "';
     var proxy_real_protocol = '" + _0x3eee3d + "';
     var proxy_real_host = '" + _0x2244ba + "';
     var config_proxy_url = '" + _0x411a18.proxy_url + "';
-    var config_token_prefix = '" + _0x411a18.token_prefix;
+    var config_token_prefix = '" + _0x411a18.token_prefix + "';
+
+    // window.siteproxy_injected_flag = true;
+    // var proxy_url_prefix = 'http://localhost:5006/user22334455/';
+    // var proxy_real_protocol = 'https';
+    // var proxy_real_host = 'www.netptop.com';
+    // var config_proxy_url = 'http://localhost:5006';
+    // var config_token_prefix = '/user22334455/';
+
 
     function _0x1b27a9(_0x33f129) {
         return new Promise(_0x329d31 => setTimeout(_0x329d31, _0x33f129));
@@ -379,6 +387,7 @@ if (!window.siteproxy_injected_flag) {
         }
     }
     function _0x5794be() {
+        return;
         var _0x2a6a1a = localStorage.getItem("topBarLastShown");
         var _0x92d8ae = new Date().getTime();
         if (_0x2a6a1a && _0x92d8ae - parseInt(_0x2a6a1a) < 86400000) {
@@ -528,4 +537,3 @@ if (!window.siteproxy_injected_flag) {
     }
 
 }
-
